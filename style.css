@@ -434,14 +434,18 @@
 #es-rc #es-rc-content .es-qa .es-accordion__title {
   display: block;
   width: 100%;
+  height: unset;
   padding: 17px 50px 17px 15px;
-  font-size: 20px;
+  font-size: 20px !important;
   color: #fff;
   transition: all 200ms ease-out;
   cursor: pointer;
   background-color: #007470;
   z-index: 1;
   position: relative;
+}
+#es-rc #es-rc-content .es-qa .es-accordion__title::before {
+  display: none;
 }
 #es-rc #es-rc-content .es-accordion__arrow {
   width: 22px;
